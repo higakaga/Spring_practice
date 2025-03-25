@@ -1,10 +1,9 @@
-# ========== OS / 환경별 무시 파일 ==========
+# ========== OS별 시스템 파일 ==========
 
-### macOS ###
+# macOS
 .DS_Store
 .AppleDouble
 .LSOverride
-Icon
 ._*
 .DocumentRevisions-V100
 .fseventsd
@@ -20,7 +19,7 @@ Temporary Items
 .apdisk
 *.icloud
 
-### Windows ###
+# Windows
 Thumbs.db
 Thumbs.db:encryptable
 ehthumbs.db
@@ -35,10 +34,17 @@ $RECYCLE.BIN/
 *.msp
 *.lnk
 
-# ========== IDE 관련 무시 파일 ==========
+---
 
-### IntelliJ IDEA / JetBrains ###
+# ========== IDE 설정 파일 ==========
+
+# IntelliJ / JetBrains IDEs
 .idea/
+*.iml
+*.ipr
+*.iws
+out/
+.idea_modules/
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
@@ -46,10 +52,7 @@ $RECYCLE.BIN/
 .idea/**/shelf
 .idea/**/aws.xml
 .idea/**/contentModel.xml
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
+.idea/**/dataSources*
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
@@ -58,23 +61,14 @@ $RECYCLE.BIN/
 .idea/**/mongoSettings.xml
 .idea/**/sonarlint/
 .idea/**/sonarIssues.xml
-.idea/**/markdown-navigator.xml
-.idea/**/markdown-navigator-enh.xml
-.idea/**/markdown-navigator/
+.idea/**/markdown-navigator*
 .idea/**/azureSettings.xml
 .idea/httpRequests
 .idea/codestream.xml
 .idea/replstate.xml
 .idea/$CACHE_FILE$
-.idea_modules/
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### VS Code ###
+# VS Code
 .vscode/
 .history/
 .ionide
@@ -86,28 +80,30 @@ out/
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 
-### STS (Spring Tool Suite) ###
+# STS (Spring Tool Suite)
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 
-# ========== Java / 빌드 관련 무시 파일 ==========
+---
 
-### Java ###
+# ========== Java & Gradle 관련 파일 ==========
+
+# Java
 *.class
 *.log
 *.ctxt
@@ -122,16 +118,9 @@ bin/
 hs_err_pid*
 replay_pid*
 
-### Gradle ###
-.gradle/
-build/
-!gradle/wrapper/gradle-wrapper.jar
+# Gradle
+**/.gradle/
+**/build/
+!**/gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
-
-### CMake ###
-cmake-build-*/
-
-# ========== 기타 프로젝트 무시 파일 ==========
-
-HELP.md
